@@ -1,0 +1,73 @@
+.app.dark {
+    background-color: black;
+    color: rgb(90, 153, 178);    
+}
+
+
+.app.dark #widget:hover, .app.dark #chart:hover, .app.dark #featured:hover, .app.dark #single .top .left:hover, .app.dark #table-table:hover, .app.dark #home .list-container:hover {
+    /* box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px; */
+    box-shadow: rgba(219, 219, 224, 0.851) 0px 0px 0px 3px;
+    
+    
+}
+
+.app.dark #table-table, .app.dark #sidebar {
+    background-color: black;
+}
+
+.app.dark #new .bottom, .app.dark #single .top .left, .app.dark #widget, .app.dark #featured, .app.dark #chart, .app.dark #table-table, .app.dark #single-table,  .app.dark #home .list-container {
+    box-shadow: 0 0 10px 0 white;
+}
+
+.app.dark #table-table .tableCell {
+    box-shadow: 0 0 10px 0 white;
+    color: rgb(90, 153, 178);
+}
+
+.app.dark #navbar, .app.dark #sidebar, .app.dark hr {
+    /* background-color: white; */
+    border-color: rgba(128, 128, 128, 0.378);
+}
+
+.icon {
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.app.dark #list li span{
+    /* border-radius: 20px; */
+    /* box-shadow: 0 0 10px 0 white; */
+    color: rgba(242, 246, 243, 0.619)
+
+
+}
+
+.app.dark #action button {
+    border: none;
+}
+
+.app.dark #dataTable #dataChanges {
+    color: white;
+    border: solid 2px white;
+    background-color: red;
+}
+ 
+.app.dark #new-container button.learn-more .button-text {
+    color: white;
+}
+
+.app.dark #new-container button:hover .button-text {
+    color: rgb(12, 105, 244);
+}
+
+.app.dark #new-container button:hover .circle .icon.arrow {
+    background-color: rgb(12, 105, 244);
+    color: rgb(12, 105, 244);
+
+    
+}
+
+/* .app.dark #home-container .list-container{
+    font-size: 14px;
+    background-color: black;
+} */

@@ -1,0 +1,134 @@
+#dataTable {
+    /* border: solid 2px red; */
+    margin: 20px;
+}
+
+#dataTable .cellWithImg {
+    height: 100%;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 2px red; */
+
+
+}
+
+#dataTable .cellWithImg .cellImg {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+#dataTable .cellWithStatusContainer {
+        /* border: solid 1px red; */
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        height: 70%;
+        width: 60%;
+
+        border-radius: 12px;
+}
+
+
+
+#dataTable .cellWithStatusContainer .active, #dataTable .cellWithStatusContainer .passive, #dataTable .cellWithStatusContainer .pending {
+    height: 100%;
+    width: 100%;
+    border-radius: 32px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+
+    
+}
+
+#dataTable .cellWithStatusContainer p {
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+
+#dataTable .cellWithStatusContainer .active {
+    background-color: rgba(0, 128, 0, 0.523);
+    color: green;
+}
+
+#dataTable .cellWithStatusContainer .pending {
+    background-color: rgba(255, 255, 0, 0.208);
+    color: yellowgreen;
+}
+
+#dataTable .cellWithStatusContainer .passive {
+    background-color: rgba(255, 0, 0, 0.305);
+    color: red;
+}
+
+
+#dataTable #action .button-container {
+    /* display: flex; */
+    /* height: 100px; */
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    gap: 20px;
+    border: none;
+
+    /* padding: 2px; */
+
+}
+#action {
+    
+    width: fit-content;
+}
+
+#action button {
+    /* border: none; */
+    border: dashed 2px rebeccapurple;
+    /* padding: 2px; */
+    cursor: pointer;
+
+    border-radius: 50%;
+    background-color: transparent;
+    /* border-bottom: white solid 2px; */
+}
+
+#action img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+}
+
+#dataTable .dataTableTitle {
+    width: 95%;
+    font-size: 32px;
+    margin: 20px 0;
+    padding-left: 3%;
+    /* margin-bottom: 10px; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#dataTable .dataTableTitle .link {
+    padding: 1%;
+    border-radius: 24px;
+    font-size: 18px;
+    text-decoration: none;
+    color: purple;
+    font-weight: 400;
+    border: solid 1px green;
+    cursor: pointer;
+}
+
+#dataTable .dataTableTitle .link:hover {
+    background-color: black;
+    color: rgb(10, 131, 172);
+}

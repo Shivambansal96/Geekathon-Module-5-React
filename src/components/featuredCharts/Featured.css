@@ -1,0 +1,121 @@
+#featured {
+    flex: 2;
+         
+    /* box-shadow: 0px 0px 10px 5px gray; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;     */
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+    border-radius: 12px;
+    padding: 0.8% 1.4%;
+    
+    /* background-color: white; */
+}
+
+#featured:hover {
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+}
+
+#featured .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* text-align: center; */
+    /* border: solid 2px red; */
+}
+
+#featured .top .title {
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+}
+
+#featured .top .icon {
+    height: 40px;
+    width: 40px;    
+    /* justify-self: flex-end; */
+}
+
+
+/* img {
+    height: 30px;
+    width: 30px;
+} */
+
+
+#featured .bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#featured .bottom .featured-chart {
+    height: 100px;
+    width: 100px;
+}
+
+#featured .bottom .title{
+    font-size: 24px;
+}
+
+#featured .bottom .amount{
+    font-size: 32px;
+    color: green;
+}
+
+#featured .bottom .description{
+    font-size: 18px;
+    text-align: center;
+}
+
+#featured .summary {
+    width: 100%;
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+#featured .summary .item {
+    /* text-align: center; */
+    /* border: solid 2px red; */
+
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+
+#featured .summary .item .itemTitle {
+    font-size: 20px;
+    color: gray;
+}
+
+
+#featured .summary .itemResult {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+
+}
+
+#featured .summary .itemResult .positive   {
+    color: green;
+
+}
+
+#featured .summary .itemResult .negative {
+    color: red;
+}
+
+
+#featured .summary .resultAmount {
+    /* color: red; */
+    font-size: 20px;
+}

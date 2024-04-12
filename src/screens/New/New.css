@@ -1,0 +1,225 @@
+#new {
+    width: 100%;
+    display: flex;
+}
+
+#new-container {
+    flex: 6;
+
+}
+
+#new-container .top, #new-container .bottom {
+    padding: 0.8% 1.4%;
+    margin: 20px;
+    border-radius: 12px;
+    
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+
+}
+
+#new-container .bottom {
+
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+    /* gap: -20px; */
+    flex: 1;
+
+
+
+    /* border: solid 2px red; */
+}
+
+#new-container .bottom .left {
+    /* width: 10%; */
+    flex: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-container .bottom .left .img {
+    height: 100px;
+    width: 150px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(128, 128, 128, 0.753);
+    border-radius: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-container .bottom .left .img img {
+    height: 180px;
+    width: 160px;
+    object-fit: cover;
+    object-position: top;
+
+    border-radius: 20px;
+
+}
+            
+#new-container .bottom .right {
+    flex: 3;
+
+}
+
+#new-container .bottom .button-container {
+    flex: 1;
+}
+
+#new-container .bottom .right form {
+    /* border: solid 2px red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    gap: 15px;
+}
+
+#new-container form .formInput {
+    width: 50%;
+    /* border: solid 2px red; */
+    font-size: 18px;
+}
+
+#new-container form .formInput input { 
+    padding-left: 2%;
+    padding-top: 1%;
+    font-size: 15px;
+    width: 50%;
+    /* border: none; */
+    border: solid 1px black;
+    border-radius: 20px;
+    /* border: solid 2px red; */
+}
+#new-container .bottom .right img {
+    height: 40px;
+    width: 40px;
+}   
+
+#new-container form .formInput {
+    width: 80%;
+    /* border: solid 2px red; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+#new-container form .formInput label {
+    /* border: solid 2px red; */
+    
+    display: flex;
+    /* flex-direction: column; */
+}
+
+/* #new-container form .formInput p {} */
+
+#new-container button {
+    /* justify-self: center; */
+    align-self: center;
+    width: 15%;
+    padding: 5px;
+    border: none;
+}
+
+
+/* BUTTON STARTS */
+
+#new-container button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+    font-style: italic;
+}
+   
+#new-container button.learn-more {
+    width: 12rem;
+    height: auto;
+}
+   
+#new-container button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: #282936;
+    border-radius: 1.625rem;
+}
+   
+#new-container button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+#new-container button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+   
+#new-container button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+   
+#new-container button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+   
+#new-container button:hover .circle {
+    width: 100%;
+}
+   
+#new-container button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+   
+#new-container button:hover .button-text {
+    color: #fff;
+}
+
+
+/* BUTTON  ENDS */

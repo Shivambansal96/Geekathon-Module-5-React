@@ -1,0 +1,117 @@
+
+#navbar {
+    height: 52px;
+    border-bottom: 2px solid lightgray;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: gray;
+    /* background-color: white; */
+}
+
+#navbar .wrapper {
+    width: 99%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: red; */
+
+    /* margin-top: 500px; */
+}
+
+#navbar #search {
+    margin-left: 5%;
+    height: 70%;
+    width: 40%;
+    border: solid 1px black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* gap:  -200px; */
+
+    /* position: relative; */
+}
+
+
+#navbar #search input {
+    background-color: transparent;
+    padding-left: 2%;
+    font-weight: bold;
+    font-style: italic;
+    /* border: solid 1px black; */
+    /* border-radius: 12px; */
+    border: none;
+    outline: none;
+    height: 100%;
+
+    font-size: 15px;
+    width: 50%;
+}
+
+#navbar .search-icon {
+    height: 35px;
+    width: 35px;
+}
+
+/* #navbar #wrapper .search-icon {
+    position: absolute;
+    color: red;
+    padding-right: -20px;
+} */
+
+#navbar #nav-icons {
+    /* background-color: cyan; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1%;
+    gap: 20px;
+
+    width: 50%;
+
+    
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+}
+
+
+#nav-icons .counter {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 18px;
+    width: 18px;
+
+    border-radius: 50%;
+
+    font-weight: bold;
+
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    color: white;
+}
+
+#nav-icons .icon {
+    font-size: 25px;
+    height: 40px;
+    width: 40px;
+}
+
+
+#nav-icons .avatar {
+    height: 20px;
+    width: 20px;
+    transform: scale(2);
+    border-radius: 50%;
+}

@@ -1,0 +1,61 @@
+
+/* #single-table {
+    margin-left: 20px;
+} */
+
+#table-table .tabelCellHeading {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(103, 102, 102, 0.284);
+}
+
+#table-table .tabelCellData {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+
+#single-table .cellWrapper {
+    display: flex;
+
+    /* border: solid 2px red; */
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+}
+
+#single-table .cellWrapper .image {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+
+    object-fit: cover;
+    /* transform: scale(); */
+     
+}
+
+#single-table .status {
+    border-radius: 5px;
+    padding: 5px;
+
+}
+
+#single-table .Approved {
+    /* border-radius: 5px; */
+    background-color: rgb(48, 234, 48);
+    color: green;
+}
+
+#single-table .Pending {
+    /* border-radius: 5px; */
+    background-color: rgb(219, 219, 141);
+    color: yellow;
+}
+
+#single-table .Rejected {
+    background-color: rgb(204, 65, 65);
+    color: white;
+}
+

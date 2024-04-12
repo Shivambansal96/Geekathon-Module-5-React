@@ -1,0 +1,123 @@
+
+
+#sidebar {
+    /* display: flex; */
+
+    border-right: 0.5px solid lightgray;
+    min-height: 100vh;
+    background-color: white;
+    flex: 1;
+
+}
+
+#logo {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: purple;
+}
+
+hr {
+    height: 0;
+    border: 0.5px solid lightgray;
+}
+
+
+#list {
+    padding-left: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* gap: 10px; */
+
+
+}   
+
+#list ul {
+    list-style: none;
+    /* width: 100%; */
+
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+}
+
+#list .title {
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: gray;
+
+}
+
+#list ul li {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 5%;
+    padding: 15px;
+    cursor: pointer;
+
+    /* border: solid 2px red; */
+
+}
+
+#list ul li:hover {
+    background-color: lightgray;
+    border-radius: 12pc;
+    /* padding: 10px; */
+}
+
+#list .icon {
+    /* font-size: 24px; */
+    height: 30px;
+    width: 30px;
+    color: purple;
+}
+
+#list ul li span {
+    font-size: 18px;
+    font-weight: 600;
+    color: #888;
+}
+
+
+
+#color-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    
+    margin: 10px;
+    /* border: solid 2px red; */
+    color: black;
+}
+
+#color-dark, #color-white  {
+    height: 30px;
+    width: 30px;
+    border: solid 1px purple;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#color-dark {
+    border: solid 1px purple;
+
+    background-color: black;
+}
+
+#color-white {
+    border: solid 1px purple;
+
+    background-color: whitesmoke;
+}
