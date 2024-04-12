@@ -12,11 +12,22 @@ function Login() {
                     <div class="input-content">
                         <div class="input-dist">
                             <div class="input-type">
-                            <input class="input-is" type="text" required="" placeholder="Username" />
+                            <input class="input-is" type="text" required placeholder="Username" />
+                            <input
+                                class="input-is"
+                                type="text"
+                                required
+                                placeholder="Name"
+                            />
+                            <input
+                                class="input-is"
+                                type="text"
+                                placeholder="Email"
+                            />
                             <input
                                 class="input-is"
                                 type="password"
-                                required=""
+                                required
                                 placeholder="Password"
                             />
                             </div>
@@ -25,7 +36,7 @@ function Login() {
                 </div>
             
             <Link to='/homepage' style={{textDecoration: 'none'}}>
-                <button class="submit-button">Log in</button>
+                <button type="submit" class="submit-button">Sign In</button>
             </Link>
             </form>
 
