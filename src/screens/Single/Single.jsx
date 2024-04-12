@@ -5,7 +5,7 @@ import "./Single.css"
 import Chart from "../../components/Charts/Chart";
 import SingleTable from "../../components/Table/Table";
 
-function Single() {
+function Single(props) {
     return(
         <div id="single">
             {/* <p>Single</p> */}
@@ -16,7 +16,9 @@ function Single() {
                     <div className="left">
                         
                         <div className="up">
-                            <h2 className="title">Information</h2>
+                            <h2 className="title">
+                                <p>Information</p>
+                            </h2>
                         </div>
 
                         <div className="down">
@@ -28,6 +30,7 @@ function Single() {
                             <div className="flex-end">
                                 <button className="edit-button"><img src={edit} alt="" /></button>
                                 <h2 className="itemTitle">Jane Doe</h2>
+                                {/* <h2 className="itemTitle">{props.title}</h2> */}
 
                                 <div className="detailItem">
                                     <span className="itemKey">Email: </span>

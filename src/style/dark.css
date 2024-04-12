@@ -1,22 +1,45 @@
 .app.dark {
     background-color: black;
-    color: rgb(90, 153, 178);    
+    color: rgb(90, 153, 178);       
 }
 
 
-.app.dark #widget:hover, .app.dark #chart:hover, .app.dark #featured:hover, .app.dark #single .top .left:hover, .app.dark #table-table:hover, .app.dark #home .list-container:hover {
+.app.dark #widget:hover, 
+.app.dark #chart:hover, 
+.app.dark #featured:hover, 
+.app.dark #single .top .left:hover, 
+.app.dark #table-table:hover, 
+.app.dark #home .list-container:hover,
+#single .single-container .bottom:hover {
     /* box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px; */
-    box-shadow: rgba(219, 219, 224, 0.851) 0px 0px 0px 3px;
+    /* box-shadow: rgba(219, 219, 224, 0.851) 0px 0px 0px 3px; */
+
+    border: 2px solid #8707ff;
+    /* border-radius: 10px; */
+    box-shadow: none;
     
     
+}
+
+.app.dark #table-table, .app.dark #single-table {
+    border-radius: 20px;
 }
 
 .app.dark #table-table, .app.dark #sidebar {
     background-color: black;
 }
 
-.app.dark #new .bottom, .app.dark #single .top .left, .app.dark #widget, .app.dark #featured, .app.dark #chart, .app.dark #table-table, .app.dark #single-table,  .app.dark #home .list-container {
+.app.dark #new .bottom, 
+.app.dark #single .top .left, 
+.app.dark #widget, 
+.app.dark #featured, 
+.app.dark #chart, 
+.app.dark #table-table, 
+.app.dark #single-table, 
+.app.dark #home .list-container,
+#single .single-container .bottom {
     box-shadow: 0 0 10px 0 white;
+    
 }
 
 .app.dark #table-table .tableCell {
@@ -63,11 +86,35 @@
 .app.dark #new-container button:hover .circle .icon.arrow {
     background-color: rgb(12, 105, 244);
     color: rgb(12, 105, 244);
-
-    
 }
 
+
+.app.dark #chart .title, .app.dark #featured .top .title  {
+    color: gray;
+}
+  
 /* .app.dark #home-container .list-container{
     font-size: 14px;
     background-color: black;
 } */
+
+
+.app.dark #navbar #search {
+    color: #8707ff;
+    border: 2px solid #8707ff;
+    border-radius: 10px;
+    /* width: 100%; */
+    /* padding: 10px 25px; */
+    background: transparent;
+}
+
+.app.dark #navbar .search-icon {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+.app.dark #dataTable .cellWithImage p {
+    color: rgb(90, 153, 178);
+
+}

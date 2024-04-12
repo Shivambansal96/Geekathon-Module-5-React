@@ -35,7 +35,7 @@ function Home() {
                     <div className="listTitle">
                         <p>Latest Transactions</p>
                     </div>
-                    <SingleTable />
+                    <SingleTable /> 
                 </div>
 
             </div>

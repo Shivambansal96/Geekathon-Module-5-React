@@ -15,6 +15,10 @@ function New(inputs) {
     // console.log(inputs)
     // console.log(file)
 
+    function showAlert() {
+        alert('Data Sent!')
+    }
+
     return(
         <div id="new">
             <Sidebar />            
@@ -71,8 +75,8 @@ function New(inputs) {
                         </form>
                     </div>
 
-                    <div className="button-container">
-                        <button className="learn-more">
+                    <div className="button-container" onClick={()=> showAlert()}>
+                        <button  className="learn-more" type="submit">
                             <span className="circle" aria-hidden="true">
                             <span className="icon arrow"></span>
                             </span>

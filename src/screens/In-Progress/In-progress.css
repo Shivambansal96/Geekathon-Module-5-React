@@ -1,0 +1,15 @@
+#In-progress {
+    height: 98vh;
+    width: 100vw;
+}
+
+
+#In-progress img{
+
+    height: 100%;
+    width: 100%;
+    /* object-fit: contain; */
+    object-position: center;
+    background-color: red;
+    
+}

@@ -11,6 +11,7 @@ import Login from './screens/Login/Login';
 import List from './screens/List/List';
 import Single from './screens/Single/Single';
 import New from './screens/New/New';
+import InProgress from './screens/In-Progress/In-progress';
 import { userInputs } from './formSource';
 import { productInputs } from './formSource';
 import './style/dark.css'
@@ -30,8 +31,10 @@ function App() {
       <BrowserRouter>
         <Routes>  
           <Route path='/'>
-            <Route index element={<Home />} />
-            <Route path='login' element={<Login />} />
+            <Route index element={<Login />} />
+            <Route path='homepage' element={<Home />} />
+            <Route path='orders' element={<InProgress />} />
+            
             
             <Route path='users'>
               <Route index element={<List />} />

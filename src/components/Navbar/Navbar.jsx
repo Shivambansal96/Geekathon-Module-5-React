@@ -17,7 +17,6 @@ function Navbar() {
 
     const {dispatch} = useContext(DarkModeContext)
 
-
     return (
         <div id="navbar">
             <div className="wrapper">

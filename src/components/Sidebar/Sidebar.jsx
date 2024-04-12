@@ -31,7 +31,7 @@ function Sidebar(){
                 {/* Sidebar */}
 
                 <div id="logo">
-                    <Link to='/' style={{textDecoration: 'none'}}>
+                    <Link to='/homepage' style={{textDecoration: 'none'}}>
                         <h2>Demon_God</h2>                
                     </Link>
                 </div>
@@ -46,8 +46,9 @@ function Sidebar(){
                         <span>Dashboard</span>
                     </li>
 
-                <Link to='/users' style={{textDecoration: 'none'}}>
                     <p className="title">LIST</p>
+                
+                <Link to='/users' style={{textDecoration: 'none'}}>
                     <li>
                         <img src={user_icon} className="icon" />
                         <span>Users</span>
@@ -59,57 +60,79 @@ function Sidebar(){
                         <span>Products</span>
                     </li>
                 </Link>
+                <Link to='/orders' style={{textDecoration: 'none'}}>
                     <li>
                         <img src={order_icon} className="icon" />
                         <span>Orders</span>
                     </li>
-
+                </Link>
+                <Link to='/orders' style={{textDecoration: 'none'}}>
                     <li>
                         <img src={truck_icon} alt="truck" className="icon" />
                         <span>Delivery</span>
                     </li>
-
+                </Link>
+                
                     <p className="title">USEFUL</p>
+                
+                <Link to='/orders' style={{textDecoration: 'none'}}>
                     <li>
                         <img src={stats_icon} className="icon" />
                         <span>Stats</span>
                     </li>
-
+                    </Link>
+                <Link to='/orders' style={{textDecoration: 'none'}}>
                     <li>
                         <img src={notifications_icon} className="icon"/>
                         <span>Notifications</span>
                     </li>
+                </Link>
 
                     <p className="title">SERVICE</p>
+
+                <Link to='/orders' style={{textDecoration: 'none'}}>
                     <li>
                     <img src={health_icon} className="icon" />
                         <span>System Health</span>
                     </li>
+                    </Link>
+                <Link to='/orders' style={{textDecoration: 'none'}}>
                     <li>
                     <img src={history_icon} className="icon" />
                         <span>Logs</span>
                     </li>
+                    </Link>
+                <Link to='/orders' style={{textDecoration: 'none'}}>
                     <li>
                     <img src={settting_icon} className="icon" />
                         <span>Settings</span>
                     </li>
+                    </Link>
 
                     <p className="title">USER</p>
+                    
+                {/* <Link to='/orders' style={{textDecoration: 'none'}}> */}
+                <a style={{textDecoration:'none'}} href="https://shivambansal96.github.io/oibsip_taskno.2/">
                     <li>
-                    <img src={profile_icon} className="icon" />
-                        <span>Profile</span>
+                        <img src={profile_icon} className="icon" />
+                            <span>Profile</span>
                     </li>
+                </a>
+                {/* </Link> */}
+
+                <Link to='/orders' style={{textDecoration: 'none'}}>
                     <li>
                     <img src={logout_icon} className="icon" />
                         <span>Logout</span>
                     </li>
+                </Link>
                 </ul>
                 </div>
 
                 <div id="color-options">
                     {/* <p>Color Options</p> */}
-                    <div id="color-dark" onClick={()=>dispatch({type:'Light'})}></div>
-                    <div id="color-white" onClick={()=>dispatch({type:'Dark'})}></div>
+                    <div id="color-dark" onClick={()=>dispatch({type:'Dark'})}></div>
+                    <div id="color-white" onClick={()=>dispatch({type:'Light'})}></div>
                 </div>
 
         </div>
