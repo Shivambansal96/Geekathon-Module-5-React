@@ -20,14 +20,14 @@
   flex-wrap: nowrap;
   flex-direction: column;
   gap: 3%;
-  border: solid 2px red;
+  /* border: solid 2px red; */
 }
 
 .input-container {
   filter: drop-shadow(46px 36px 24px #4090b5)
     drop-shadow(-55px -40px 25px #9e30a9);
   animation: blinkShadowsFilter 8s ease-in infinite;
-  height: 400px;
+  height: 250px;
   width: 400px;
 }
 
@@ -203,7 +203,7 @@
   font-size: 22px;
   border-radius: 0 12px;
   color: hsla(192, 100%, 88%, 0.806);
-  border: solid 2px rgba(0, 255, 255, 0.363);
+  border: solid 2px rgba(0, 255, 255, 0.188);
   background: linear-gradient(
     90deg,
     transparent 0%,
@@ -212,8 +212,8 @@
     transparent 100%
   );
   clip-path: polygon(0 0, 85% 0%, 100% 0, 100% 15%, 100% 90%, 91% 100%, 0 100%);
-  /* padding: 0.5em; */
-  padding: 20px;
+  padding: 0.5em;
+  /* padding: 20px; */
   animation: blinkShadowsFilter 1s ease-in infinite;
   transition: all 500ms;
 }

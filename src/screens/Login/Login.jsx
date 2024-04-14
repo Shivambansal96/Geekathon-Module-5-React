@@ -1,31 +1,66 @@
+import { useState } from "react";
 import "./Login.css"
-import { Link } from "react-router-dom"
+import { Link, Navigate } from "react-router-dom"
+import { useNavigate } from 'react-router-dom';
 
 
 function Login() {
 
+    const [email, setEmail] = useState('bansal.shivam1216@gmail.com')
+    const [password, setPassword] = useState('123')
+
+    
+    const navigate = useNavigate();
+    
+    const submitHandler = (event) => {
+        
+        // localStorage.setItem('Email', email)
+        // localStorage.setItem('Password', password)
+        
+        event.preventDefault();
+
+        console.log(email);
+        console.log(password);
+        console.log(event);
+
+        
+        if(email === localStorage.getItem(email)) {
+
+            navigate('/homepage');
+
+        }
+
+        else {
+            alert("email in use!")
+        }
+
+
+    }
+
     return(
         <div id="login">
             {/* <p>Login</p> */}
-            <form class="container" action="">
-                <div class="input-container">
-                    <div class="input-content">
-                        <div class="input-dist">
-                            <div class="input-type">
-                            <input class="input-is" type="text" required placeholder="Username" />
+            <form className="container" action="">
+                <div className="input-container">
+                    <div className="input-content">
+                        <div className="input-dist">
+                            <div className="input-type">
+                            {/* <input class="input-is" type="text" required placeholder="Username" />
                             <input
                                 class="input-is"
                                 type="text"
                                 required
                                 placeholder="Name"
-                            />
+                            /> */}
                             <input
-                                class="input-is"
+                                onChange={(e)=> setEmail(e.target.value)}
+                                className="input-is"
                                 type="text"
                                 placeholder="Email"
                             />
                             <input
-                                class="input-is"
+                                onChange={(e)=> setPassword(e.target.value)}
+                                className="input-is"
                                 type="password"
                                 required
                                 placeholder="Password"
@@ -35,9 +70,9 @@ function Login() {
                     </div>
                 </div>
             
-            <Link to='/homepage' style={{textDecoration: 'none'}}>
-                <button type="submit" class="submit-button">Sign In</button>
-            </Link>
+            <Link>
+                <button type="submit" onClick={submitHandler} className="submit-button">Sign In</button>
+            </Link> 
             </form>
 
         </div>
