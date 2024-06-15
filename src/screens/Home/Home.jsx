@@ -10,12 +10,10 @@ import "./Home.css"
 import SingleTable from "../../components/Table/Table";
 
 
-
 function Home() {
     return(
         
         <div id="home">
-            {/* <p>Homepage</p> */}
                 <Sidebar />
             <div id="home-container">
                 <Navbar />

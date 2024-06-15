@@ -10,29 +10,27 @@ function Login() {
     const [password, setPassword] = useState('123')
 
     
-    const navigate = useNavigate();
-    
     const submitHandler = (event) => {
         
         // localStorage.setItem('Email', email)
         // localStorage.setItem('Password', password)
         
-        event.preventDefault();
+        // event.preventDefault();
 
-        console.log(email);
-        console.log(password);
-        console.log(event);
+        // console.log(email);
+        // console.log(password);
+        // console.log(event);
 
         
-        if(email === localStorage.getItem(email)) {
+        // if(email === localStorage.getItem(email)) {
 
-            navigate('/homepage');
+        //     navigate('/homepage');
 
-        }
+        // }
 
-        else {
-            alert("email in use!")
-        }
+        // else {
+        //     alert("email in use!")
+        // }
 
 
     }
@@ -70,8 +68,9 @@ function Login() {
                     </div>
                 </div>
             
-            <Link>
-                <button type="submit" onClick={submitHandler} className="submit-button">Sign In</button>
+            <Link to='/homepage'>
+                {/* onClick={submitHandler}  */}
+                <button type="submit" className="submit-button">Sign In</button>
             </Link> 
             </form>
 

@@ -2,9 +2,7 @@ import './App.css';
 import Home from './screens/Home/Home';
 import {
   BrowserRouter,
-  // Switch,
   Route,
-  // Link,
   Routes
 } from "react-router-dom";
 import Login from './screens/Login/Login';
@@ -25,16 +23,13 @@ function App() {
 
   return (
     <div className={darkMode ? 'app dark' : 'app'}>
-    {/* <div className='app dark'> */}
 
-      {/* <Home /> */}
       <BrowserRouter>
         <Routes>  
           <Route path='/'>
             <Route index element={<Login />} />
             <Route path='homepage' element={<Home />} />
-            <Route path='orders' element={<InProgress />} />
-            
+            <Route path='orders' element={<InProgress />} />            
             
             <Route path='users'>
               <Route index element={<List />} />
@@ -52,8 +47,11 @@ function App() {
         </Routes>
       </BrowserRouter>
 
+
+
     </div>
   );
 }
 
 export default App;
+

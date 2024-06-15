@@ -74,7 +74,7 @@ function Widget({type, props}) {
         data = {
             title: "BALANCE",
             isMoney: true,
-            state: 'positive',
+            state: 'positive',  
             amountNumber: 213,
             stateIcon: <KeyboardArrowUpIcon />,
             link: "See Details",
@@ -97,26 +97,20 @@ function Widget({type, props}) {
             {/* Widget */}
             <div className="left">  
                 <span className="title">{data.title}</span>
-                {/* <span className='title'>ok</span> */}
                 <span className="counter">
-                    {/* {data.isMoney } */}
                     {data.isMoney && '$'} {data.amountNumber}
                     </span>
-                {/* <span className="link">1fd1ac</span> */}
             <Link to='/users' style={{textDecoration: 'none'}}>
                 <span className="link">{data.link}</span>
             </Link>
             </div>
             <div className="right">
                 <div className={`percentage ${data.state} `}>
-                    {/* <KeyboardArrowUpIcon />  */}
                     {data.stateIcon}
                     <span>{data.diffNumber}&nbsp;%</span>
                 </div>
-                {/* <PersonOutlinedIcon className="icon" /> */}
                 <div id='widget-icon'>
                     {data.icon}
-                    {/* <img src='' alt={data.icon} /> */}
                 </div>
             </div>
         </div>
